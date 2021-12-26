@@ -1,0 +1,77 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(228, 217, 207);
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+.area {
+  padding: 12px 24px;
+  margin: 18px 10px;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  background-color: antiquewhite;
+  border: solid 6px rgb(231, 158, 62);
+
+  &--input {
+    display: flex;
+    align-items: center;
+
+    border: double 6px rgb(228, 188, 135);
+  }
+}
+
+.todo-list {
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+
+  &__name {
+    width: 240px;
+    word-wrap: break-word;
+  }
+}
+
+.input {
+  width: 320px;
+  padding: 6px 16px;
+  border-radius: 4px;
+
+  &:focus {
+    outline: solid black 2px;
+  }
+}
+
+.button {
+  height: 32px;
+  padding: 0px 12px;
+  margin: 0 0 0 6px;
+  background-color: rgb(238, 226, 212);
+  border-radius: 6px;
+  outline: solid 1px rgb(192, 188, 180);
+
+  &:focus {
+    outline: solid black 2px;
+  }
+
+  &:hover {
+    background-color: rgb(252, 214, 48);
+  }
+
+  &--add {
+    margin-left: 6px;
+  }
+}

@@ -1,5 +1,24 @@
 @()
 
-@main("Welcome to Play") {
-  <h1>Welcome to Play!</h1>
+@main("non-ReacTODO.js") {
+  <h1>non-ReacTODO.js</h1>
+
+  <div class="area area--input">
+    <input placeholder="TODOを入力してね" class="input" id="input-todo" />
+    <button class="button button--add" id="add-todo">Add</button>
+  </div>
+
+  <div class="area area--undone">
+    <h2 class="todo-title">UNDONE</h2>
+    <ul class="todo-list" id="undone-list">
+      <p id="no-undone-item">未完了のタスクはありません。</p>
+    </ul>
+  </div>
+
+  <div class="area area--done">
+    <h2 class="todo-title">DONE</h2>
+    <ul class="todo-list" id="done-list">
+      <p id="no-done-item">完了したタスクはありません。</p>
+    </ul>
+  </div>
 }
